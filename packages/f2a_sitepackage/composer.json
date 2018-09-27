@@ -1,0 +1,19 @@
+{
+    "name": "i-have-no-company/f2a-sitepackage",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "homepage": "http://nowebpage.com",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "version": "1.0.0",
+    "require": {
+        "typo3/cms-core": "^8.7.0 || ^9.0",
+        "typo3/cms-rte-ckeditor": "^8.7.0 || ^9.0",
+        "bk2k/bootstrap-package": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "IHaveNoCompany\\F2aSitepackage\\": "Classes/"
+        }
+    }
+}

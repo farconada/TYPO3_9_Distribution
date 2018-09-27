@@ -1,0 +1,4 @@
+#
+# BACKENDLAYOUTS
+#
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:f2a_sitepackage/Configuration/PageTS/Mod/WebLayout/BackendLayouts" extensions="txt">

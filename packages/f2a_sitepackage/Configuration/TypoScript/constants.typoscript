@@ -1,0 +1,58 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
+
+
+############
+### PAGE ###
+############
+page {
+    logo {
+        file = EXT:f2a_sitepackage/Resources/Public/Images/logo.svg
+        fileInverted = EXT:f2a_sitepackage/Resources/Public/Images/logo-inverted.svg
+        height = 52
+        width = 192
+        alt = F2a Sitepackage
+        linktitle = F2a Sitepackage
+    }
+    favicon {
+        file = EXT:f2a_sitepackage/Resources/Public/Icons/favicon.ico
+    }
+    fluidtemplate {
+        layoutRootPath = EXT:f2a_sitepackage/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:f2a_sitepackage/Resources/Private/Partials/Page/
+        templateRootPath = EXT:f2a_sitepackage/Resources/Private/Templates/Page/
+    }
+}
+
+
+##################
+### EXTENSIONS ###
+##################
+plugin.bootstrap_package {
+    view {
+        layoutRootPath = EXT:f2a_sitepackage/Resources/Private/Layouts/
+        partialRootPath = EXT:f2a_sitepackage/Resources/Private/Partials/
+        templateRootPath = EXT:f2a_sitepackage/Resources/Private/Templates/
+    }
+}
+
+
+########################
+### CONTENT ELEMENTS ###
+########################
+plugin.bootstrap_package_contentelements {
+    view {
+        layoutRootPath = EXT:f2a_sitepackage/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:f2a_sitepackage/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:f2a_sitepackage/Resources/Private/Templates/ContentElements/
+    }
+}
+
+
+#######################################
+### REMOVE BOOTSTRAP LESS CONSTANTS ###
+#######################################
+plugin.bootstrap_package.settings.less >
+plugin.bootstrap_package.settings.overrideLessVariables >
